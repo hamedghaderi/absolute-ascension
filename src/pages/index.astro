@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css'
+
 const pageTitle = 'Home Page'
 ---
 
@@ -11,10 +13,14 @@ const pageTitle = 'Home Page'
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
+		<nav class="text-blue-600 py-2 container mx-auto">
+			<a class="hover:text-blue-500 hover:underline" href="/">Home</a>
+			<a class="hover:text-blue-500 hover:underline" href="/about/">About</a>
+			<a class="hover:text-blue-500 hover:underline" href="/blog/">Blog</a>
+		</nav>
 
-		<h1>{pageTitle}</h1>
+		<div class="container mx-auto">
+			<h1 class="font-bold text-4xl">{pageTitle}</h1>
+		</div>
 	</body>
 </html>
