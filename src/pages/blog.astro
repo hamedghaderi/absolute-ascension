@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
 const pageTitle = 'My Astro Learning Blog'
 ---
 
@@ -12,13 +14,9 @@ const pageTitle = 'My Astro Learning Blog'
 		<title>{pageTitle}</title>
 	</head>
 	<body>
-        <nav class="text-blue-600 py-2 container mx-auto">
-			<a class="hover:text-blue-500 hover:underline" href="/">Home</a>
-			<a class="hover:text-blue-500 hover:underline" href="/about/">About</a>
-			<a class="hover:text-blue-500 hover:underline" href="/blog/">Blog</a>
-		</nav>
+		<Header />
 
-		<div class="container mx-auto">
+		<div class="container mt-4 mx-auto">
 		<h1 class="text-4xl font-bold">{pageTitle}</h1>
 
         <p>This is where I will post about my journey learning Astro.</p>
@@ -29,6 +27,6 @@ const pageTitle = 'My Astro Learning Blog'
         </ul>
 		</div>
 
-
+		<Footer />
 	</body>
 </html>
